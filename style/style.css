@@ -1,0 +1,456 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+header div.menuHamb {
+  display: none;
+}
+
+/* MAIN */
+/* SECTION FIRTS */
+.sectionFirts img {
+  width: 90%;
+  padding: 10px;
+}
+
+.sectionFirts article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sectionFirts article h1 {
+  font-size: 3rem;
+  text-align: end;
+  padding: 50px 20px 10px;
+  color: #232851;
+}
+
+.sectionFirts article p {
+  color: #000;
+  text-align: end;
+  font-weight: 500;
+  padding: 0px 20px 20px;
+  margin-left: 50px;
+}
+
+.sectionFirts article button.contact {
+  color: #fff;
+  background-color: #8b48bf;
+  padding: 15px 50px;
+  margin: 20px;
+  border-radius: 30px;
+  border: none;
+}
+
+/* SECTION SECOND */
+.sectionSecond article.different {
+  background: #3cddf3;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+article.different h2 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 20px;
+}
+
+article.different p {
+  color: #fff;
+  padding: 20px 10px 30px 20px;
+  line-height: 25px;
+}
+
+.sectionSecond article.articleFirts,
+.sectionSecond article.articleSecond,
+.sectionSecond article.articleThird {
+  margin: 40px 0px 20px 20px;
+}
+
+.sectionSecond article.articleFirts h3,
+.sectionSecond article.articleSecond h3,
+.sectionSecond article.articleThird h3 {
+  background-color: rgba(139, 72, 191, 0.3);
+  padding: 10px 0;
+  border-radius: 30px 0 0 30px;
+}
+
+.sectionSecond article.articleFirts p,
+.sectionSecond article.articleSecond p,
+.sectionSecond article.articleThird p {
+  padding: 20px 0;
+  color: #b3b2b7;
+  line-height: 25px;
+  padding-right: 50px;
+}
+
+.sectionSecond article.articleFirts h3::before,
+.sectionSecond article.articleSecond h3::before,
+.sectionSecond article.articleThird h3::before {
+  content: "01";
+  color: #fff;
+  background: #8b48bf;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: 300;
+}
+
+.sectionSecond article.articleSecond h3::before {
+  content: "02";
+}
+
+.sectionSecond article.articleThird h3::before {
+  content: "03";
+}
+
+/* SECTION THIRD */
+.sectionThird {
+  padding: 20px;
+}
+
+.sectionThird h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-bottom: 70px;
+  color: #232851;
+}
+
+.sectionThird article.cardSecond,
+.sectionThird article.cardFirts,
+.sectionThird article.cardThird {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 249, 249);
+  position: relative;
+  margin: 0 1px;
+}
+
+.sectionThird article.cardSecond img,
+.sectionThird article.cardFirts img,
+.sectionThird article.cardThird img {
+  width: auto;
+  position: absolute;
+  top: -30px;
+  right: 180px;
+}
+
+.sectionThird article.cardSecond h4,
+.sectionThird article.cardFirts h4,
+.sectionThird article.cardThird h4 {
+  text-align: center;
+  padding: 50px 0px 0px;
+  color: #1e1e26;
+}
+
+.sectionThird article.cardSecond p,
+.sectionThird article.cardFirts p,
+.sectionThird article.cardThird p {
+  padding: 10px 20px;
+  color: #b3b2b7;
+  line-height: 25px;
+  text-align: center;
+}
+
+.sectionThird button.more {
+  background-color: #8b48bf;
+  color: #fff;
+  display: flex;
+  margin: 40px auto 60px;
+  padding: 15px 80px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* SECTION FOURTH */
+.sectionFourth {
+  background-color: #3cddf3;
+  color: #fff;
+  text-align: center;
+}
+
+.sectionFourth h2 {
+  font-size: 2.5rem;
+  padding: 30px 70px;
+  margin: 0 10px;
+  max-width: 500px;
+}
+
+.sectionFourth button.btnGoFor {
+  padding: 15px 50px;
+  margin: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  background-color: #232851;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1e1e26;
+}
+
+footer div.divInput {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+div.divInput input {
+  width: 70%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  margin-right: 20px;
+}
+
+div.divInput input::placeholder {
+  color: #b3b2b7;
+}
+
+div.divInput button.btnGo {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #8b48bf;
+  color: #fff;
+}
+
+footer div.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+div.menu li {
+  list-style: none;
+  padding: 10px;
+}
+
+div.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer div.rrss {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+footer div.copyr {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  color: #b3b2b7;
+  text-align: center;
+  font-size: small;
+  padding: 20px;
+}
+
+/* MEDIA QUERIES */
+/* MOBILE */
+@media (max-width: 480px) {
+  header nav,
+  header button,
+  .pDesktop,
+  .none > * {
+    display: none;
+  }
+
+  header div.menuHamb {
+    display: block;
+    font-size: 3rem;
+  }
+  header div.menuHamb a {
+    color: #000;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 481px) {
+  /* body {
+    max-width: 1440px;
+  } */
+
+  /* HEADER */
+  header {
+    justify-content: space-around;
+  }
+
+  header nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: #232851;
+  }
+
+  nav li a:hover {
+    color: #b3b2b7;
+  }
+
+  header button.contact {
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    background-color: #8b48bf;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  /* MAIN */
+  /* SECTION FIRTS */
+
+  main .sectionFirts {
+    display: flex;
+  }
+
+  .sectionFirts article {
+    margin-left: 25%;
+  }
+
+  /* SECTION SECOND */
+  .sectionSecond {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .sectionSecond article.different p.pMobile {
+    display: none;
+  }
+
+  .sectionSecond article.different {
+    background: #8b48bf;
+    display: flex;
+    align-items: center;
+  }
+
+  article.different h2 {
+    padding-left: 200px;
+    text-align: start;
+    width: 50%;
+  }
+
+  article.different p {
+    padding: 0 120px;
+    width: 50%;
+  }
+
+  .sectionSecond article.articleFirts,
+  .sectionSecond article.articleSecond,
+  .sectionSecond article.articleThird {
+    display: flex;
+    flex-wrap: wrap;
+    width: 580px;
+  }
+
+  .sectionSecond article.articleFirts h3,
+  .sectionSecond article.articleSecond h3,
+  .sectionSecond article.articleThird h3 {
+    background-color: #fff;
+  }
+
+  .sectionSecond article.articleFirts p,
+  .sectionSecond article.articleSecond p,
+  .sectionSecond article.articleThird p {
+    padding: 20px 70px;
+  }
+
+  /* SECTION THIRD */
+  .sectionThird {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sectionThird h2 {
+    width: 100%;
+  }
+
+  .sectionThird article.cardFirts,
+  .sectionThird article.cardSecond,
+  .sectionThird article.cardThird {
+    width: 33%;
+  }
+
+  /* SECTION FOURTH */
+  section.sectionFourth {
+    display: flex;
+    background-color: #8b48bf;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+  }
+
+  .sectionFourth h2 {
+    text-align: start;
+    padding: 40px;
+  }
+
+  .sectionFourth button.btnGoFor {
+    cursor: pointer;
+    background-color: #fff;
+    color: #8b48bf;
+    padding: 10px 60px;
+    height: 50px;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+
+  footer div.rrss {
+    padding: 10px;
+    bottom: 10px;
+    left: 60px;
+    position: absolute;
+  }
+
+  footer div.rrss img {
+    padding: 10px;
+  }
+
+  footer div.menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+  }
+
+  footer p {
+    color: #b3b2b7;
+    order: -1;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+  }
+}
