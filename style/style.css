@@ -55,6 +55,7 @@ header div.menuHamb {
   margin: 20px;
   border-radius: 30px;
   border: none;
+  cursor: pointer;
 }
 
 /* SECTION SECOND */
@@ -187,10 +188,9 @@ article.different p {
 }
 
 .sectionFourth h2 {
-  font-size: 2.5rem;
-  padding: 30px 70px;
-  margin: 0 10px;
-  max-width: 500px;
+  font-size: 2rem;
+  padding: 30px 90px;
+  margin: 0 30px;
 }
 
 .sectionFourth button.btnGoFor {
@@ -207,12 +207,12 @@ footer {
   background-color: #1e1e26;
 }
 
-footer div.divInput {
+footer form.formInput {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 40px 0 20px;
 }
-div.divInput input {
+form.formInput input {
   width: 70%;
   padding: 15px;
   border-radius: 30px;
@@ -220,16 +220,17 @@ div.divInput input {
   margin-right: 20px;
 }
 
-div.divInput input::placeholder {
+form.formInput input::placeholder {
   color: #b3b2b7;
 }
 
-div.divInput button.btnGo {
+form.formInput button.btnGo {
   padding: 10px 30px;
   border: none;
   border-radius: 30px;
   background-color: #8b48bf;
   color: #fff;
+  cursor: pointer;
 }
 
 footer div.menu {
@@ -248,10 +249,15 @@ div.menu li a {
   color: #fff;
 }
 
+div.menu li a:hover {
+  color: #b3b2b7;
+}
+
 footer div.rrss {
   display: flex;
   justify-content: space-around;
   padding-bottom: 30px;
+  cursor: pointer;
 }
 
 footer div.copyr {
@@ -289,9 +295,9 @@ footer p {
 
 /* DESKTOP */
 @media (min-width: 481px) {
-  /* body {
+  body {
     max-width: 1440px;
-  } */
+  }
 
   /* HEADER */
   header {
@@ -361,6 +367,10 @@ footer p {
     width: 50%;
   }
 
+  .sectionSecond {
+    background-color: rgb(249, 249, 249);
+  }
+
   .sectionSecond article.articleFirts,
   .sectionSecond article.articleSecond,
   .sectionSecond article.articleThird {
@@ -373,6 +383,7 @@ footer p {
   .sectionSecond article.articleSecond h3,
   .sectionSecond article.articleThird h3 {
     background-color: #fff;
+    background-color: rgb(249, 249, 249);
   }
 
   .sectionSecond article.articleFirts p,
