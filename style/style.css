@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* BODY */
@@ -340,8 +341,6 @@ footer p {
 
   main .sectionFirts {
     display: flex;
-    /* padding: 20px;
-    margin-right: 10px; */
     justify-content: space-evenly;
     padding: 0 25px;
   }
