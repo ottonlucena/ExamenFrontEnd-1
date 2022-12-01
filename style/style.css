@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 /* BODY */
@@ -23,9 +22,13 @@ header div.menuHamb {
 
 /* MAIN */
 /* SECTION FIRTS */
+.sectionFirts {
+  display: flex;
+  flex-direction: column;
+}
+
 .sectionFirts img {
   width: 90%;
-  padding: 20px;
   margin-left: 20px;
 }
 
@@ -33,12 +36,13 @@ header div.menuHamb {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding: 0 40px;
 }
 
 .sectionFirts article h1 {
   font-size: 3rem;
   text-align: end;
-  padding: 50px 20px 10px;
+  padding: 50px 0;
   color: #232851;
 }
 
@@ -46,15 +50,14 @@ header div.menuHamb {
   color: #000;
   text-align: end;
   font-weight: 500;
-  padding: 0px 20px 20px;
-  margin-left: 50px;
+  padding: 0px 0 10px;
 }
 
 .sectionFirts article button.contact {
   color: #fff;
   background-color: #8b48bf;
   padding: 15px 50px;
-  margin: 20px;
+  margin: 10px 5px 30px;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -168,7 +171,7 @@ article.different p {
 .sectionThird article.cardSecond p,
 .sectionThird article.cardFirts p,
 .sectionThird article.cardThird p {
-  padding: 10px 20px;
+  padding: 10px 25px;
   color: #b3b2b7;
   line-height: 25px;
   text-align: center;
@@ -333,20 +336,29 @@ footer p {
   /* MAIN */
   /* SECTION FIRTS */
 
+  main .sectionFirts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .sectionFirts div.divBanner {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 40px;
+  }
+
   .sectionFirts img {
     width: 100%;
     padding: 0;
-    margin-left: 0;
-  }
-
-  main .sectionFirts {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 25px;
   }
 
   .sectionFirts article {
-    margin-left: 25%;
+    width: 40%;
+  }
+
+  .sectionFirts article button.contact {
+    margin: 30px 5px 30px;
   }
 
   /* SECTION SECOND */
@@ -363,11 +375,11 @@ footer p {
   .sectionSecond article.different {
     background: #8b48bf;
     display: flex;
-    align-items: center;
+    padding: 10px 10%;
   }
 
   article.different h2 {
-    padding-left: 200px;
+    /* padding-left: 200px; */
     text-align: start;
     width: 50%;
   }
@@ -377,7 +389,7 @@ footer p {
   }
 
   article.different p {
-    padding: 0 120px;
+    /* padding: 0 120px; */
     width: 50%;
   }
 
@@ -462,8 +474,8 @@ footer p {
     padding: 0px 0 80px;
   }
 
-  form.formInput input {
-    width: 100%;
+  footer form.formInput input.inputUpdate {
+    padding: 15px 50px;
   }
 
   footer div.rrss {
@@ -480,7 +492,10 @@ footer p {
   footer div.menu ul {
     display: flex;
     flex-direction: column;
-    padding: 0 100px;
+  }
+
+  footer div.menu ul li {
+    margin: 0 30px;
   }
 
   footer p {
