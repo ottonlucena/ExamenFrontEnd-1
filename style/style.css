@@ -4,6 +4,18 @@
   padding: 0;
 }
 
+:root {
+  --main-bg-color: #8b48bf;
+  --main-bgSecond-color: rgba(139, 72, 191, 0.3);
+  --main-bgTert-color: rgb(249, 249, 249);
+  --main-bgMobile-color: #3cddf3;
+  --main-white-color: #fff;
+  --mian-black-color: #000;
+  --main-primary-color: #232851;
+  --main-second-color: #b3b2b7;
+  --main-tert-color: #1e1e26;
+}
+
 /* BODY */
 body {
   font-family: "Be Vietnam Pro", sans-serif;
@@ -43,19 +55,19 @@ header div.menuHamb {
   font-size: 3rem;
   text-align: end;
   padding: 50px 0;
-  color: #232851;
+  color: var(--main-primary-color);
 }
 
 .sectionFirts article p {
-  color: #000;
+  color: var(--mian-black-color);
   text-align: end;
   font-weight: 500;
   padding: 0px 0 10px;
 }
 
 .sectionFirts article button.contact {
-  color: #fff;
-  background-color: #8b48bf;
+  color: var(--main-white-color);
+  background-color: var(--main-bg-color);
   padding: 15px 50px;
   margin: 10px 5px 30px;
   border-radius: 30px;
@@ -63,21 +75,27 @@ header div.menuHamb {
   cursor: pointer;
 }
 
+/* HOVER BUTTON */
+button.contact:hover {
+  box-shadow: inset 20rem 30px 0 0 #07ffbf;
+  transition: all 5s;
+}
+
 /* SECTION SECOND */
 .sectionSecond article.different {
-  background: #3cddf3;
+  background: var(--main-bgMobile-color);
   padding: 20px;
   margin-bottom: 60px;
 }
 
 article.different h2 {
-  color: #fff;
+  color: var(--main-white-color);
   font-size: 2rem;
   padding: 20px;
 }
 
 article.different p {
-  color: #fff;
+  color: var(--main-white-color);
   padding: 20px 10px 30px 20px;
   line-height: 25px;
 }
@@ -91,7 +109,7 @@ article.different p {
 .sectionSecond article.articleFirts h3,
 .sectionSecond article.articleSecond h3,
 .sectionSecond article.articleThird h3 {
-  background-color: rgba(139, 72, 191, 0.3);
+  background-color: var(--main-bgSecond-color);
   border-radius: 30px 0 0 30px;
   display: flex;
   align-items: center;
@@ -104,7 +122,7 @@ article.different p {
 .sectionSecond article.articleSecond p,
 .sectionSecond article.articleThird p {
   padding: 20px 0;
-  color: #b3b2b7;
+  color: var(--main-second-color);
   line-height: 25px;
   padding-right: 50px;
 }
@@ -113,8 +131,8 @@ article.different p {
 .sectionSecond article.articleSecond h3::before,
 .sectionSecond article.articleThird h3::before {
   content: "01";
-  color: #fff;
-  background: #8b48bf;
+  color: var(--main-white-color);
+  background: var(--main-bg-color);
   padding: 10px 20px;
   border-radius: 40px;
   font-weight: 300;
@@ -131,6 +149,10 @@ article.different p {
 /* SECTION THIRD */
 .sectionThird {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .sectionThird h2 {
@@ -138,7 +160,7 @@ article.different p {
   font-weight: 700;
   font-size: 2.5rem;
   padding-bottom: 70px;
-  color: #232851;
+  color: var(--main-primary-color);
 }
 
 .sectionThird article.cardSecond,
@@ -146,7 +168,7 @@ article.different p {
 .sectionThird article.cardThird {
   display: flex;
   flex-direction: column;
-  background-color: rgb(249, 249, 249);
+  background-color: var(--main-bgTert-color);
   position: relative;
   margin: 0 1px;
 }
@@ -165,23 +187,25 @@ article.different p {
 .sectionThird article.cardThird h4 {
   text-align: center;
   padding: 50px 0px 0px;
-  color: #1e1e26;
+  color: var(--main-tert-color);
 }
 
 .sectionThird article.cardSecond p,
 .sectionThird article.cardFirts p,
 .sectionThird article.cardThird p {
   padding: 10px 25px;
-  color: #b3b2b7;
+  color: var(--main-second-color);
   line-height: 25px;
   text-align: center;
 }
 
 .sectionThird button.more {
-  background-color: #8b48bf;
-  color: #fff;
+  background-color: var(--main-bg-color);
+  color: var(--main-white-color);
   display: flex;
-  margin: 40px auto 60px;
+  margin: 40px 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px 80px;
   border-radius: 30px;
   border: none;
@@ -190,8 +214,8 @@ article.different p {
 
 /* SECTION FOURTH */
 .sectionFourth {
-  background-color: #3cddf3;
-  color: #fff;
+  background-color: var(--main-bgMobile-color);
+  color: var(--main-white-color);
   text-align: center;
 }
 
@@ -204,15 +228,15 @@ article.different p {
 .sectionFourth button.btnGoFor {
   padding: 15px 50px;
   margin: 20px;
-  color: #fff;
+  color: var(--main-white-color);
   border: none;
   border-radius: 30px;
-  background-color: #232851;
+  background-color: var(--main-primary-color);
 }
 
 /* FOOTER */
 footer {
-  background-color: #1e1e26;
+  background-color: var(--main-tert-color);
 }
 
 footer form.formInput {
@@ -230,15 +254,15 @@ form.formInput input {
 }
 
 form.formInput input::placeholder {
-  color: #b3b2b7;
+  color: var(--main-second-color);
 }
 
 form.formInput button.btnGo {
   padding: 10px 30px;
   border: none;
   border-radius: 30px;
-  background-color: #8b48bf;
-  color: #fff;
+  background-color: var(--main-bg-color);
+  color: var(--main-white-color);
   cursor: pointer;
 }
 
@@ -255,11 +279,11 @@ div.menu li {
 
 div.menu li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--main-white-color);
 }
 
 div.menu li a:hover {
-  color: #b3b2b7;
+  color: var(--main-second-color);
 }
 
 footer div.rrss {
@@ -274,13 +298,14 @@ footer div.copyr {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 
 footer p {
-  color: #b3b2b7;
+  color: var(--main-second-color);
   text-align: center;
   font-size: small;
-  padding: 30px;
+  padding: 50px;
 }
 
 /* MEDIA QUERIES */
@@ -298,7 +323,7 @@ footer p {
     font-size: 3rem;
   }
   header div.menuHamb a {
-    color: #000;
+    color: var(--mian-black-color);
   }
 }
 
@@ -317,18 +342,18 @@ footer p {
 
   nav li a {
     text-decoration: none;
-    color: #232851;
+    color: var(--main-primary-color);
   }
 
   nav li a:hover {
-    color: #b3b2b7;
+    color: var(--main-second-color);
   }
 
   header button.contact {
-    color: #fff;
+    color: var(--main-white-color);
     padding: 10px 40px;
     border: none;
-    background-color: #8b48bf;
+    background-color: var(--main-bg-color);
     border-radius: 30px;
     cursor: pointer;
   }
@@ -373,7 +398,7 @@ footer p {
   }
 
   .sectionSecond article.different {
-    background: #8b48bf;
+    background: var(--main-bg-color);
     display: flex;
     padding: 10px 10%;
   }
@@ -394,7 +419,7 @@ footer p {
   }
 
   .sectionSecond {
-    background-color: rgb(249, 249, 249);
+    background-color: var(--main-bgTert-color);
   }
 
   .sectionSecond article.articleFirts,
@@ -408,8 +433,8 @@ footer p {
   .sectionSecond article.articleFirts h3,
   .sectionSecond article.articleSecond h3,
   .sectionSecond article.articleThird h3 {
-    background-color: #fff;
-    background-color: rgb(249, 249, 249);
+    background-color: var(--main-white-color);
+    background-color: var(--main-bgTert-color);
   }
 
   .sectionSecond article.articleFirts p,
@@ -427,6 +452,7 @@ footer p {
 
   .sectionThird h2 {
     width: 100%;
+    margin-top: 30px;
   }
 
   .sectionThird article.cardFirts,
@@ -438,7 +464,7 @@ footer p {
   /* SECTION FOURTH */
   section.sectionFourth {
     display: flex;
-    background-color: #8b48bf;
+    background-color: var(--main-bg-color);
     justify-content: space-around;
     align-items: center;
     height: 200px;
@@ -455,8 +481,8 @@ footer p {
 
   .sectionFourth button.btnGoFor {
     cursor: pointer;
-    background-color: #fff;
-    color: #8b48bf;
+    background-color: var(--main-white-color);
+    color: var(--main-bg-color);
     padding: 10px 60px;
     height: 50px;
   }
@@ -481,8 +507,15 @@ footer p {
   footer div.rrss {
     padding: 10px;
     bottom: 10px;
-    left: 60px;
+    left: 100px;
     position: absolute;
+  }
+
+  footer div.copyr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 4rem;
   }
 
   footer div.rrss img {
@@ -499,7 +532,7 @@ footer p {
   }
 
   footer p {
-    color: #b3b2b7;
+    color: var(--main-second-color);
     order: -1;
     position: absolute;
     right: 90px;
